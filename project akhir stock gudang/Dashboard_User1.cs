@@ -134,5 +134,12 @@ namespace project_akhir_stock_gudang
             jumlahspidolwarna++;
             jumlah_beli_spidol_warna.Text = jumlahspidolwarna.ToString();
         }
+
+        private void tombol_alat_tulis_Click(object sender, EventArgs e)
+        {
+            Dashboard_User2 menuju = new Dashboard_User2();
+            menuju.Show();
+            this.Hide();
+        }
     }
 }
