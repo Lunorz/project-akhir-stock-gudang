@@ -41,7 +41,47 @@ namespace project_akhir_stock_gudang
 
         private void tombol_login_Click(object sender, EventArgs e)
         {
-         
+            string username = textnama.Text;
+            string password = textpassword.Text;
+
+            if (username == "admin" && password == "admin758150")
+            {
+                MessageBox.Show("login berhasil! selamat datang di panel admin");
+                panel_admin panel = new panel_admin();
+                panel.Show();
+                this.Hide();
+            }
+
+
+            if (username == "" || password == "")
+            {
+                MessageBox.Show("username dan password wajib diisi!");
+                return;
+            }
+
+            bool valid = UserStore.ValidateLogin(username, password);
+
+            if (valid)
+            {
+            MessageBox.Show("Login berhasil!");
+
+            Dashboard_User1 dashboard = new Dashboard_User1();
+            dashboard.Show();
+                this.Hide();
+
+            }
+            else
+            {
+                MessageBox.Show("username atau password salah!");
+            }
+
+        }
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+            Form_Daftar daftar = new Form_Daftar();
+            daftar.Show();
+            this.Hide();
         }
     }
 }

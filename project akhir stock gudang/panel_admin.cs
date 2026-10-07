@@ -16,5 +16,10 @@ namespace project_akhir_stock_gudang
         {
             InitializeComponent();
         }
+
+        private void panel_admin_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

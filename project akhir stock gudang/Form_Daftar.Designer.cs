@@ -1,14 +1,14 @@
 ﻿namespace project_akhir_stock_gudang
 {
-    partial class Form1
+    partial class Form_Daftar
     {
         /// <summary>
-        ///  Required designer variable.
+        /// Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
         /// <summary>
-        ///  Clean up any resources being used.
+        /// Clean up any resources being used.
         /// </summary>
         /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
@@ -23,20 +23,18 @@
         #region Windows Form Designer generated code
 
         /// <summary>
-        ///  Required method for Designer support - do not modify
-        ///  the contents of this method with the code editor.
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_Daftar));
             panel1 = new Panel();
-            label8 = new Label();
-            label6 = new Label();
-            lihat_password = new CheckBox();
-            tombol_batal = new Button();
+            kembali_ke_login = new Label();
+            reg_lihat_password = new CheckBox();
             tombol_login = new Button();
-            textpassword = new TextBox();
-            textnama = new TextBox();
+            reg_password = new TextBox();
+            reg_nama = new TextBox();
             label3 = new Label();
             label2 = new Label();
             label1 = new Label();
@@ -51,94 +49,71 @@
             // 
             // panel1
             // 
-            panel1.Controls.Add(label8);
-            panel1.Controls.Add(label6);
-            panel1.Controls.Add(lihat_password);
-            panel1.Controls.Add(tombol_batal);
+            panel1.Controls.Add(kembali_ke_login);
+            panel1.Controls.Add(reg_lihat_password);
             panel1.Controls.Add(tombol_login);
-            panel1.Controls.Add(textpassword);
-            panel1.Controls.Add(textnama);
+            panel1.Controls.Add(reg_password);
+            panel1.Controls.Add(reg_nama);
             panel1.Controls.Add(label3);
             panel1.Controls.Add(label2);
             panel1.Controls.Add(label1);
             panel1.Controls.Add(panel2);
-            panel1.Location = new Point(0, -1);
+            panel1.Location = new Point(-5, -28);
             panel1.Name = "panel1";
-            panel1.Size = new Size(706, 508);
-            panel1.TabIndex = 0;
+            panel1.Size = new Size(721, 481);
+            panel1.TabIndex = 1;
             // 
-            // label8
+            // kembali_ke_login
             // 
-            label8.AutoSize = true;
-            label8.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label8.Location = new Point(637, 438);
-            label8.Name = "label8";
-            label8.Size = new Size(64, 25);
-            label8.TabIndex = 11;
-            label8.Text = "daftar";
-            label8.Click += label8_Click;
+            kembali_ke_login.AutoSize = true;
+            kembali_ke_login.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            kembali_ke_login.Location = new Point(686, 37);
+            kembali_ke_login.Name = "kembali_ke_login";
+            kembali_ke_login.Size = new Size(24, 25);
+            kembali_ke_login.TabIndex = 9;
+            kembali_ke_login.Text = "X";
+            kembali_ke_login.Click += kembali_ke_login_Click;
             // 
-            // label6
+            // reg_lihat_password
             // 
-            label6.AutoSize = true;
-            label6.Location = new Point(457, 438);
-            label6.Name = "label6";
-            label6.Size = new Size(184, 25);
-            label6.TabIndex = 9;
-            label6.Text = "belum memiliki akun?";
-            // 
-            // lihat_password
-            // 
-            lihat_password.AutoSize = true;
-            lihat_password.Location = new Point(546, 293);
-            lihat_password.Name = "lihat_password";
-            lihat_password.Size = new Size(153, 29);
-            lihat_password.TabIndex = 8;
-            lihat_password.Text = "lihat password";
-            lihat_password.UseVisualStyleBackColor = true;
-            lihat_password.CheckedChanged += lihat_password_CheckedChanged;
-            // 
-            // tombol_batal
-            // 
-            tombol_batal.BackColor = Color.IndianRed;
-            tombol_batal.Font = new Font("Segoe UI Black", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            tombol_batal.Location = new Point(476, 328);
-            tombol_batal.Name = "tombol_batal";
-            tombol_batal.Size = new Size(112, 53);
-            tombol_batal.TabIndex = 7;
-            tombol_batal.Text = "batal";
-            tombol_batal.UseVisualStyleBackColor = false;
-            tombol_batal.Click += tombol_batal_Click;
+            reg_lihat_password.AutoSize = true;
+            reg_lihat_password.Location = new Point(546, 293);
+            reg_lihat_password.Name = "reg_lihat_password";
+            reg_lihat_password.Size = new Size(153, 29);
+            reg_lihat_password.TabIndex = 8;
+            reg_lihat_password.Text = "lihat password";
+            reg_lihat_password.UseVisualStyleBackColor = true;
+            reg_lihat_password.CheckedChanged += reg_lihat_password_CheckedChanged;
             // 
             // tombol_login
             // 
             tombol_login.BackColor = Color.IndianRed;
             tombol_login.Font = new Font("Segoe UI Black", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            tombol_login.Location = new Point(587, 328);
+            tombol_login.Location = new Point(587, 340);
             tombol_login.Name = "tombol_login";
             tombol_login.Size = new Size(112, 53);
             tombol_login.TabIndex = 6;
-            tombol_login.Text = "login";
+            tombol_login.Text = "daftar";
             tombol_login.UseVisualStyleBackColor = false;
             tombol_login.Click += tombol_login_Click;
             // 
-            // textpassword
+            // reg_password
             // 
-            textpassword.Location = new Point(331, 254);
-            textpassword.Name = "textpassword";
-            textpassword.PlaceholderText = "masukkan password";
-            textpassword.Size = new Size(358, 31);
-            textpassword.TabIndex = 5;
-            textpassword.UseSystemPasswordChar = true;
-            textpassword.TextChanged += textBox2_TextChanged;
+            reg_password.Location = new Point(331, 254);
+            reg_password.Name = "reg_password";
+            reg_password.PlaceholderText = "masukkan password";
+            reg_password.Size = new Size(358, 31);
+            reg_password.TabIndex = 5;
+            reg_password.UseSystemPasswordChar = true;
             // 
-            // textnama
+            // reg_nama
             // 
-            textnama.Location = new Point(331, 181);
-            textnama.Name = "textnama";
-            textnama.PlaceholderText = "masukkan username";
-            textnama.Size = new Size(358, 31);
-            textnama.TabIndex = 4;
+            reg_nama.Location = new Point(331, 181);
+            reg_nama.Name = "reg_nama";
+            reg_nama.PlaceholderText = "masukkan username";
+            reg_nama.Size = new Size(358, 31);
+            reg_nama.TabIndex = 4;
+            reg_nama.TextChanged += reg_nama_TextChanged;
             // 
             // label3
             // 
@@ -149,7 +124,6 @@
             label3.Size = new Size(98, 25);
             label3.TabIndex = 3;
             label3.Text = "password";
-            label3.Click += label3_Click;
             // 
             // label2
             // 
@@ -165,7 +139,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Showcard Gothic", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label1.Location = new Point(360, 43);
+            label1.Location = new Point(362, 73);
             label1.Name = "label1";
             label1.Size = new Size(310, 23);
             label1.TabIndex = 1;
@@ -214,16 +188,16 @@
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
             // 
-            // Form1
+            // Form_Daftar
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(706, 503);
+            ClientSize = new Size(713, 452);
             Controls.Add(panel1);
             FormBorderStyle = FormBorderStyle.None;
-            Name = "Form1";
-            Text = "Form1";
-            FormClosed += Form1_FormClosed;
+            Name = "Form_Daftar";
+            Text = "Form_Daftar";
+            FormClosed += Form_Daftar_FormClosed;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             panel2.ResumeLayout(false);
@@ -235,19 +209,17 @@
         #endregion
 
         private Panel panel1;
-        private Panel panel2;
-        private Label label1;
-        private Label label2;
-        private TextBox textpassword;
-        private TextBox textnama;
-        private Label label3;
-        private Button tombol_batal;
+        private CheckBox reg_lihat_password;
         private Button tombol_login;
-        private CheckBox lihat_password;
+        private TextBox reg_password;
+        private TextBox reg_nama;
+        private Label label3;
+        private Label label2;
+        private Label label1;
+        private Panel panel2;
         private Label label5;
         private Label label4;
         private PictureBox pictureBox1;
-        private Label label8;
-        private Label label6;
+        private Label kembali_ke_login;
     }
 }
