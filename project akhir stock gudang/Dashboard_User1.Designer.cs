@@ -818,6 +818,7 @@
             tombol_perlengkapan_sekolah.TabIndex = 2;
             tombol_perlengkapan_sekolah.Text = "perlengkapan sekolah";
             tombol_perlengkapan_sekolah.UseVisualStyleBackColor = true;
+            tombol_perlengkapan_sekolah.Click += tombol_perlengkapan_sekolah_Click;
             // 
             // tombol_alat_tulis
             // 

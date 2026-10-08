@@ -141,5 +141,12 @@ namespace project_akhir_stock_gudang
             menuju.Show();
             this.Hide();
         }
+
+        private void tombol_perlengkapan_sekolah_Click(object sender, EventArgs e)
+        {
+            Dashboard_User3 menuju5 = new Dashboard_User3();
+            menuju5.Show();
+            this.Hide();
+        }
     }
 }
