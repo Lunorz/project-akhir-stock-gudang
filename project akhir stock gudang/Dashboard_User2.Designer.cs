@@ -97,6 +97,7 @@
             tombol_perlengkapan_sekolah = new Button();
             tombol_alat_tulis = new Button();
             tombol_alat_gambar = new Button();
+            pictureBox7 = new PictureBox();
             panel1.SuspendLayout();
             panel23.SuspendLayout();
             panel24.SuspendLayout();
@@ -124,6 +125,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel3.SuspendLayout();
             panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
             SuspendLayout();
             // 
             // panel1
@@ -768,6 +770,7 @@
             // panel3
             // 
             panel3.BackColor = Color.Teal;
+            panel3.Controls.Add(pictureBox7);
             panel3.Controls.Add(kembali_ke_login);
             panel3.Dock = DockStyle.Top;
             panel3.Location = new Point(0, 0);
@@ -843,6 +846,16 @@
             tombol_alat_gambar.UseVisualStyleBackColor = false;
             tombol_alat_gambar.Click += tombol_alat_gambar_Click;
             // 
+            // pictureBox7
+            // 
+            pictureBox7.Image = (Image)resources.GetObject("pictureBox7.Image");
+            pictureBox7.Location = new Point(0, 0);
+            pictureBox7.Name = "pictureBox7";
+            pictureBox7.Size = new Size(325, 67);
+            pictureBox7.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox7.TabIndex = 2;
+            pictureBox7.TabStop = false;
+            // 
             // Dashboard_User2
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
@@ -893,6 +906,7 @@
             panel3.ResumeLayout(false);
             panel3.PerformLayout();
             panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
             ResumeLayout(false);
         }
 
@@ -966,5 +980,6 @@
         private Button tombol_perlengkapan_sekolah;
         private Button tombol_alat_tulis;
         private Button tombol_alat_gambar;
+        private PictureBox pictureBox7;
     }
 }

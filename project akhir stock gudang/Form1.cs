@@ -63,10 +63,10 @@ namespace project_akhir_stock_gudang
 
             if (valid)
             {
-            MessageBox.Show("Login berhasil!");
+                MessageBox.Show("Login berhasil!");
 
-            Dashboard_User1 dashboard = new Dashboard_User1();
-            dashboard.Show();
+                Dashboard_User1 dashboard = new Dashboard_User1();
+                dashboard.Show();
                 this.Hide();
 
             }
@@ -82,6 +82,26 @@ namespace project_akhir_stock_gudang
             Form_Daftar daftar = new Form_Daftar();
             daftar.Show();
             this.Hide();
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textnama_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click_1(object sender, EventArgs e)
+        {
+
         }
     }
 }

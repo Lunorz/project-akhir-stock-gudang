@@ -97,6 +97,7 @@
             tombol_perlengkapan_sekolah = new Button();
             tombol_alat_tulis = new Button();
             tombol_alat_gambar = new Button();
+            pictureBox7 = new PictureBox();
             panel1.SuspendLayout();
             panel23.SuspendLayout();
             panel24.SuspendLayout();
@@ -124,6 +125,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel3.SuspendLayout();
             panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
             SuspendLayout();
             // 
             // panel1
@@ -770,6 +772,7 @@
             // panel3
             // 
             panel3.BackColor = Color.Teal;
+            panel3.Controls.Add(pictureBox7);
             panel3.Controls.Add(kembali_ke_login);
             panel3.Dock = DockStyle.Top;
             panel3.Location = new Point(0, 0);
@@ -806,7 +809,7 @@
             tombol_keranjang.Name = "tombol_keranjang";
             tombol_keranjang.Size = new Size(328, 72);
             tombol_keranjang.TabIndex = 3;
-            tombol_keranjang.Text = "keranjang";
+            tombol_keranjang.Text = "Keranjang";
             tombol_keranjang.UseVisualStyleBackColor = true;
             // 
             // tombol_perlengkapan_sekolah
@@ -818,7 +821,7 @@
             tombol_perlengkapan_sekolah.Name = "tombol_perlengkapan_sekolah";
             tombol_perlengkapan_sekolah.Size = new Size(328, 68);
             tombol_perlengkapan_sekolah.TabIndex = 2;
-            tombol_perlengkapan_sekolah.Text = "perlengkapan sekolah";
+            tombol_perlengkapan_sekolah.Text = "Perlengkapan Sekolah";
             tombol_perlengkapan_sekolah.UseVisualStyleBackColor = false;
             // 
             // tombol_alat_tulis
@@ -830,7 +833,7 @@
             tombol_alat_tulis.Name = "tombol_alat_tulis";
             tombol_alat_tulis.Size = new Size(328, 72);
             tombol_alat_tulis.TabIndex = 1;
-            tombol_alat_tulis.Text = "alat tulis";
+            tombol_alat_tulis.Text = "Alat Tulis";
             tombol_alat_tulis.UseVisualStyleBackColor = false;
             tombol_alat_tulis.Click += tombol_alat_tulis_Click;
             // 
@@ -843,9 +846,19 @@
             tombol_alat_gambar.Name = "tombol_alat_gambar";
             tombol_alat_gambar.Size = new Size(328, 72);
             tombol_alat_gambar.TabIndex = 0;
-            tombol_alat_gambar.Text = "alat gambar";
+            tombol_alat_gambar.Text = "Alat Gambar";
             tombol_alat_gambar.UseVisualStyleBackColor = false;
             tombol_alat_gambar.Click += tombol_alat_gambar_Click;
+            // 
+            // pictureBox7
+            // 
+            pictureBox7.Image = (Image)resources.GetObject("pictureBox7.Image");
+            pictureBox7.Location = new Point(-3, 0);
+            pictureBox7.Name = "pictureBox7";
+            pictureBox7.Size = new Size(328, 67);
+            pictureBox7.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox7.TabIndex = 1;
+            pictureBox7.TabStop = false;
             // 
             // Dashboard_User3
             // 
@@ -897,6 +910,7 @@
             panel3.ResumeLayout(false);
             panel3.PerformLayout();
             panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
             ResumeLayout(false);
         }
 
@@ -970,5 +984,6 @@
         private Button tombol_perlengkapan_sekolah;
         private Button tombol_alat_tulis;
         private Button tombol_alat_gambar;
+        private PictureBox pictureBox7;
     }
 }
