@@ -30,6 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             panel1 = new Panel();
+            label4 = new Label();
+            label1 = new Label();
             label8 = new Label();
             label6 = new Label();
             lihat_password = new CheckBox();
@@ -41,8 +43,6 @@
             label2 = new Label();
             panel2 = new Panel();
             pictureBox1 = new PictureBox();
-            label1 = new Label();
-            label4 = new Label();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -66,6 +66,28 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(706, 508);
             panel1.TabIndex = 0;
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Font = new Font("Yu Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label4.ForeColor = Color.DarkCyan;
+            label4.Location = new Point(331, 89);
+            label4.Name = "label4";
+            label4.Size = new Size(138, 31);
+            label4.TabIndex = 13;
+            label4.Text = " ONE-mart";
+            label4.Click += label4_Click_1;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Yu Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.Location = new Point(331, 49);
+            label1.Name = "label1";
+            label1.Size = new Size(227, 31);
+            label1.TabIndex = 12;
+            label1.Text = "Selamat datang di";
             // 
             // label8
             // 
@@ -106,7 +128,7 @@
             tombol_batal.Name = "tombol_batal";
             tombol_batal.Size = new Size(112, 53);
             tombol_batal.TabIndex = 7;
-            tombol_batal.Text = "batal";
+            tombol_batal.Text = "keluar";
             tombol_batal.UseVisualStyleBackColor = false;
             tombol_batal.Click += tombol_batal_Click;
             // 
@@ -181,28 +203,6 @@
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Yu Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(331, 49);
-            label1.Name = "label1";
-            label1.Size = new Size(227, 31);
-            label1.TabIndex = 12;
-            label1.Text = "Selamat datang di";
-            // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Yu Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label4.ForeColor = Color.DarkCyan;
-            label4.Location = new Point(331, 89);
-            label4.Name = "label4";
-            label4.Size = new Size(138, 31);
-            label4.TabIndex = 13;
-            label4.Text = " ONE-mart";
-            label4.Click += label4_Click_1;
             // 
             // Form1
             // 

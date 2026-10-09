@@ -148,5 +148,12 @@ namespace project_akhir_stock_gudang
             menuju5.Show();
             this.Hide();
         }
+
+        private void tombol_keranjang_Click(object sender, EventArgs e)
+        {
+            Dashboard_Keranjang menuju15 = new Dashboard_Keranjang();
+            menuju15.Show();
+            this.Hide();
+        }
     }
 }
